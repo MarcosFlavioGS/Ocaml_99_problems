@@ -1,0 +1,7 @@
+_build/
+bin/*.cmi
+bin/*.cmo
+bin/*.cmx
+bin/*.o
+a.out
+tmp/
