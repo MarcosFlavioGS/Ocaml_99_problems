@@ -2,7 +2,7 @@ open Problem_one;;
 open Problem_two;;
 
 let () =
-  print_endline "Hello, World!";
+  print_endline "Hello !\nThis is my Attempt on solving Ocaml's 99 problems.";
   let problem_one = last [1; 2; 3; 4;] in
   let problem_two = last_two [1; 2; 3; 4; 5] in
 
