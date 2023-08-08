@@ -1,9 +1,4 @@
-let rec count c (lst: 'a list) =
+let rec lst_len (lst: 'a list) =
   match lst with
-  | [] -> c
-  | _ :: tail -> count (c + 1) tail
-
-let lst_len (lst: 'a list) =
-  let counter: int = 0 in
-
-  count counter lst
+  | [] -> 0
+  | _ :: tail -> 1 + lst_len tail
