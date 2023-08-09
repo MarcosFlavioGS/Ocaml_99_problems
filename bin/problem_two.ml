@@ -1,6 +1,6 @@
 (* Problem 02 *)
-let rec last_two (xs: 'a list): ('a * 'b) option =
-  match xs with
+let rec last_two (lst: 'a list): ('a * 'b) option =
+  match lst with
   | [] -> None
   | [_] -> None
   | [x; y] -> Some (x, y)

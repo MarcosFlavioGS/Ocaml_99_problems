@@ -1,6 +1,6 @@
 (* Problem 01 *)
-let rec last (xs: 'a list): 'a option =
-  match xs with
+let rec last (lst: 'a list): 'a option =
+  match lst with
   | [] -> None
   | [x] -> Some x
   | _ :: rest -> last rest
