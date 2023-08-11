@@ -7,6 +7,7 @@ open Problem_six;;
 
 let () =
   print_endline "Hello !\nThis is my Attempt on solving Ocaml's 99 problems.";
+
   let problem_one = last [1; 2; 3; 4;] in
   let problem_two = last_two [1; 2; 3; 4; 5] in
   let problem_three = fd_nth_element ["1"; "44"; "42"; "4"; "100"] 3 in
@@ -21,4 +22,4 @@ let () =
   print_endline (string_of_int problem_four);
   print_endline (string_of_int problem_four_tail);
   List.iter print_string problem_five;
-  Printf.printf "\n%b\n" problem_six
+  Printf.printf "\n%b\n" problem_six;;
