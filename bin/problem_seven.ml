@@ -9,5 +9,5 @@ let flatten lst: 'a list =
   let rec flatten' acc = function
     | [] -> acc
     | One h :: t -> flatten' (h :: acc) t
-    | Many l :: t -> flatten' (flatten' acc l) t
+    | Many h :: t -> flatten' (flatten' acc h) t
   in rev_lst (flatten' [] lst);;
