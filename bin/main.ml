@@ -5,6 +5,7 @@ open Problem_four;;
 open Problem_five;;
 open Problem_six;;
 open Problem_seven;;
+open Problem_eight;;
 
 let () =
   print_endline "Hello !\nThis is my Attempt on solving Ocaml's 99 problems.";
@@ -17,6 +18,7 @@ let () =
   let problem_five = rev_lst ["1"; "2"; "3"; "4"] in
   let problem_six = is_palindrome ["a"; "t"; "o"; "t"; "a"] in
   let problem_seven = flatten [One "a"; Many [One "b"; Many [One "c"; One "d"]; One "e"]] in
+  let problem_eight = compress ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
   print_problem_one string_of_int problem_one;
@@ -39,3 +41,6 @@ let () =
 
   print_endline "Problem 07: flatten [One 'a'; Many [One 'b'; Many [One 'c'; One 'd']; One 'e']]";
   List.iter print_string problem_seven;
+
+  print_endline "\nProblem 08: compress ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
+  List.iter print_string problem_eight;
