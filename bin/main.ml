@@ -8,6 +8,7 @@ open Problem_seven;;
 open Problem_eight;;
 open Problem_nine;;
 open Problem_ten;;
+open Problem_eleven;;
 
 let () =
   print_endline "Hello !\nThis is my Attempt on solving Ocaml's 99 problems.";
@@ -23,6 +24,7 @@ let () =
   let problem_8 = compress ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
   let problem_9 = pack ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
   let problem_10 = encode_rle ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
+  let problem_11 = mod_encode_rle ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
   print_problem_one string_of_int problem_1;
@@ -54,3 +56,6 @@ let () =
 
   print_endline "\nProblem 10: encode_rle ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
   print_ten problem_10;
+
+  print_endline "\nProblem 11: mod_encode_rle ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
+  print_eleven problem_11;
