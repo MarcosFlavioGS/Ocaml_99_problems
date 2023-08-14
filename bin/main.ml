@@ -54,8 +54,8 @@ let () =
   print_endline "\nProblem 09: pack ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
   print_nine problem_9;
 
-  print_endline "\nProblem 10: encode_rle ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
+  print_endline "Problem 10: encode_rle ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
   print_ten problem_10;
 
-  print_endline "\nProblem 11: mod_encode_rle ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
+  print_endline "Problem 11: mod_encode_rle ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
   print_eleven problem_11;

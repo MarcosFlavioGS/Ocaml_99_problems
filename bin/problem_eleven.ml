@@ -29,9 +29,11 @@ let print_eleven (lst: 'a rle list) =
     let tup: 'a rle = List.nth lst i in
     match tup with
     | One value ->
+      print_string "One ";
       print_string value;
       print_newline ();
     | Many (count, value) ->
+      print_string "Many ";
       print_int count;
       print_string " ";
       print_string value;
