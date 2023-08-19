@@ -14,9 +14,9 @@ let encode_direct (lst: 'a list): 'a rle list =
   let rec encode_direct' count acc = function
     | [] -> []
     | [elem] -> aux count elem :: acc
-    | h :: (h1 :: _ as t) ->
-      if h = h1 then encode_direct' (count + 1) acc t
-      else encode_direct' 0 (aux count h :: acc) t
+    | fst :: (scnd :: _ as tail) ->
+      if fst = scnd then encode_direct' (count + 1) acc tail
+      else encode_direct' 0 (aux count fst :: acc) tail
     in
     rev_lst (encode_direct' 0 [] lst);;
 
