@@ -68,4 +68,4 @@ let () =
   List.iter print_string problem_12;
 
   print_endline "\nProblem 13: encode_direct ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
-  print_ten problem_13;
+  print_thirteen problem_13;
