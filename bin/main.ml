@@ -72,5 +72,5 @@ let () =
   print_endline "\nProblem 13: encode_direct ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
   print_thirteen problem_13;
 
-  print_endline "Problem 14: duplicate ['a'; 'b'; 'c'; 'd'; 'e'; 'f';]";
-  List.iter print_string problem_14
+  print_endline "Problem 14: duplicate ['a'; 'b'; 'c'; 'd'; 'e'; 'f']";
+  List.iter print_string problem_14;
