@@ -1,5 +1,5 @@
 (* Problem 08 *)
-open Problem_five;;
+open P05;;
 
 let compress lst: 'a list =
   let rec compress' acc = function

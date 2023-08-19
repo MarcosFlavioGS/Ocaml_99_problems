@@ -1,8 +1,8 @@
 (* Problem 10 *)
-open Problem_three;;
-open Problem_four;;
-open Problem_five;;
-open Problem_nine;;
+open P03;;
+open P04;;
+open P05;;
+open P09;;
 
 let get_option opt =
   match opt with

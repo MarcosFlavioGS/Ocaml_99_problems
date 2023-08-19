@@ -1,16 +1,16 @@
-open Problem_one;;
-open Problem_two;;
-open Problem_three;;
-open Problem_four;;
-open Problem_five;;
-open Problem_six;;
-open Problem_seven;;
-open Problem_eight;;
-open Problem_nine;;
-open Problem_ten;;
-open Problem_eleven;;
-open Problem_twelve;;
-open Problem_thirteen;;
+open P01;;
+open P02;;
+open P03;;
+open P04;;
+open P05;;
+open P06;;
+open P07;;
+open P08;;
+open P09;;
+open P10;;
+open P11;;
+open P12;;
+open P13;;
 
 let () =
   print_endline "Hello !\nThis is my Attempt on solving Ocaml's 99 problems.";
@@ -31,7 +31,7 @@ let () =
   let problem_13 = encode_direct ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
-  print_problem_one string_of_int problem_1;
+  print_one string_of_int problem_1;
 
   print_endline "Problem 02: last_two [1; 2; 3; 4; 5]";
   print_problem_two string_of_int problem_2;

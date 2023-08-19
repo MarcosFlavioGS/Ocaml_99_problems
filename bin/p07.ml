@@ -1,5 +1,5 @@
 (* Problem 07 *)
-open Problem_five;;
+open P05;;
 
 type 'a node =
   | One of 'a

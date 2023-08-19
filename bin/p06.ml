@@ -1,4 +1,4 @@
-open Problem_five;;
+open P05;;
 
 let is_palindrome (lst: 'a list): bool =
   match lst with

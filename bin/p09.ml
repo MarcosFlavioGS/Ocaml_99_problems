@@ -1,6 +1,6 @@
 (* Problem 09 *)
-open Problem_four;;
-open Problem_five;;
+open P04;;
+open P05;;
 
 let pack lst: 'a list =
   let rec pack' current acc = function

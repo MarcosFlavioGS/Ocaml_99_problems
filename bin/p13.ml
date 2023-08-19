@@ -1,6 +1,6 @@
 (* Problem 13 *)
-open Problem_four;;
-open Problem_five;;
+open P04;;
+open P05;;
 
 type 'a rle =
   | One of 'a

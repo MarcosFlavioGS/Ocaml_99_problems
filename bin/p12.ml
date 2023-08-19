@@ -1,6 +1,6 @@
 (* Problem 12 *)
-open Problem_eleven;;
-open Problem_five;;
+open P11;;
+open P05;;
 
 let rec add n elem lst =
   if n = 0 then lst
