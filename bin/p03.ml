@@ -1,5 +1,5 @@
 (* Problem 03 *)
-let rec at l n: 'a =
+let rec at (l: 'a list) (n): 'a option =
   match l with
   | [x] -> Some x
   | head :: tail ->
