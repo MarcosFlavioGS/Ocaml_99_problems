@@ -11,6 +11,7 @@ open P10;;
 open P11;;
 open P12;;
 open P13;;
+open P14;;
 
 let () =
   print_endline "Hello !\nThis is my Attempt on solving Ocaml's 99 problems.";
@@ -29,6 +30,7 @@ let () =
   let problem_11 = mod_encode_rle ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
   let problem_12 = decode_rle [Many (4, "a"); One "b"; Many (2, "c"); Many (2, "a"); One "d"; Many (4, "e")] in
   let problem_13 = encode_direct ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
+  let problem_14 = duplicate ["a"; "b"; "B"; "c"; "d"; "e"; "f"] in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
   print_one string_of_int problem_1;
@@ -69,3 +71,6 @@ let () =
 
   print_endline "\nProblem 13: encode_direct ['a'; 'a'; 'a'; 'b'; 'b'; 'B'; 'c'; 'c'; 'd'; 'd'; 'a'; 'a'; 'e']";
   print_thirteen problem_13;
+
+  print_endline "Problem 14: duplicate ['a'; 'b'; 'c'; 'd'; 'e'; 'f';]";
+  List.iter print_string problem_14
