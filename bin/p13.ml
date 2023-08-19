@@ -4,7 +4,7 @@ open P05;;
 
 type 'a rle =
   | One of 'a
-  | Many of int * 'a
+  | Many of int * string
 
 let encode_direct (lst: 'a list): 'a rle list =
   let aux count elem =
