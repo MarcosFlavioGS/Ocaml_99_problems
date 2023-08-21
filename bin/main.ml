@@ -77,5 +77,5 @@ let () =
   print_endline "Problem 14: duplicate ['a'; 'b'; 'c'; 'd'; 'e'; 'f']";
   List.iter print_string problem_14;
 
-  print_endline "\nProblem 15: replicate ['a'; 'b'; 'c'; 'd'; 'e'; 'f']";
+  print_endline "\nProblem 15: replicate ['a'; 'b'; 'B'; 'c'; 'd'; 'e'; 'f']";
   List.iter print_string problem_15;
