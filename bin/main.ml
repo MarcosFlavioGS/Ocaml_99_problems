@@ -13,6 +13,7 @@ open P12;;
 open P13;;
 open P14;;
 open P15;;
+open P16;;
 
 let () =
   print_endline "Hello !\nThis is my Attempt on solving Ocaml's 99 problems.";
@@ -33,6 +34,7 @@ let () =
   let problem_13 = encode_direct ["a"; "a"; "a"; "b"; "b"; "B"; "c"; "c"; "d"; "d"; "a"; "a"; "e"] in
   let problem_14 = duplicate ["a"; "b"; "B"; "c"; "d"; "e"; "f"] in
   let problem_15 = replicate ["a"; "b"; "B"; "c"; "d"; "e"; "f"] 3 in
+  let problem_16 = drop ["a"; "b"; "c"; "d"; "e"; "f"; "g"; "h"; "i"; "j"] 3 in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
   print_one string_of_int problem_1;
@@ -40,7 +42,7 @@ let () =
   print_endline "Problem 02: last_two [1; 2; 3; 4; 5]";
   print_problem_two string_of_int problem_2;
 
-  print_endline "Problem 03: at ['1'; '44'; '42'; '4'; '100']";
+  print_endline "Problem 03: at ['1'; '44'; '42'; '4'; '100'] 2";
   print_three print_endline problem_3;
 
   print_endline "Problem 04 and bonus: lst_len ['1'; '2'; '3'; '4']";
@@ -77,5 +79,8 @@ let () =
   print_endline "Problem 14: duplicate ['a'; 'b'; 'c'; 'd'; 'e'; 'f']";
   List.iter print_string problem_14;
 
-  print_endline "\nProblem 15: replicate ['a'; 'b'; 'B'; 'c'; 'd'; 'e'; 'f']";
+  print_endline "\nProblem 15: replicate ['a'; 'b'; 'B'; 'c'; 'd'; 'e'; 'f'] 3";
   List.iter print_string problem_15;
+
+  print_endline "\nProblem 16: drop ['a'; 'b'; 'c'; 'd'; 'e'; 'f'; 'g'; 'h'; 'i'; 'j'] 3";
+  List.iter print_string problem_16;
