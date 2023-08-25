@@ -17,7 +17,8 @@ open P16;;
 open P17;;
 
 let () =
-  print_endline "Hello !\nThis is my Attempt on solving Ocaml's 99 problems.";
+  print_endline "Hello Ocamlers !\nThis is my Attempt on solving Ocaml's 99 problems.";
+  print_endline "*--------------------------------------------------*\n";
 
   let problem_1 = last [1; 2; 3; 4;] in
   let problem_2 = last_two [1; 2; 3; 4; 5] in
@@ -44,7 +45,7 @@ let () =
   print_endline "Problem 02: last_two [1; 2; 3; 4; 5]";
   print_problem_two string_of_int problem_2;
 
-  print_endline "Problem 03: at ['1'; '44'; '42'; '4'; '100'] 2";
+  print_endline "Problem 03: at ['1'; '44'; '42'; '4'; '100'] 3";
   print_three print_endline problem_3;
 
   print_endline "Problem 04 and bonus: lst_len ['1'; '2'; '3'; '4']";
