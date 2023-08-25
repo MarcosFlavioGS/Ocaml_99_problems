@@ -36,7 +36,7 @@ let () =
   let problem_14 = duplicate ["a"; "b"; "B"; "c"; "d"; "e"; "f"] in
   let problem_15 = replicate ["a"; "b"; "B"; "c"; "d"; "e"; "f"] 3 in
   let problem_16 = drop ["a"; "b"; "c"; "d"; "e"; "f"; "g"; "h"; "i"; "j"] 3 in
-  let problem_17 = split ["a"; "b"; "c"; "d"; "e"; "f"; "g"; "h"; "i"; "j"] 3 in
+  let problem_17 = split [1; 2; 3; 4; 5; 6] 3 in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
   print_one string_of_int problem_1;
@@ -87,5 +87,5 @@ let () =
   print_endline "\nProblem 16: drop ['a'; 'b'; 'c'; 'd'; 'e'; 'f'; 'g'; 'h'; 'i'; 'j'] 3";
   List.iter print_string problem_16;
 
-  print_endline "\nProblem 17: split ['a'; 'b'; 'c'; 'd'; 'e'; 'f'; 'g'; 'h'; 'i'; 'j'] 3";
+  print_endline "\nProblem 17: split [1; 2; 3; 4; 5; 6] 3";
   print_seventeen problem_17;

@@ -14,7 +14,7 @@ let split (lst: 'a list) (n: int): 'a list * 'a list =
 let print_seventeen (tup: 'a list * 'a list) =
   match tup with
   | (x, y) ->
-    List.iter print_string x;
+    List.iter print_int x;
     print_string " ";
-    List.iter print_string y;
+    List.iter print_int y;
     print_newline ();
