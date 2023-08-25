@@ -9,4 +9,4 @@ let slice (lst: 'a list) (n: int) (nx: int): 'a list =
       else acc
     | _ -> acc
   in
-  rev_lst (slice' (n - 1) (nx) [] lst)
+  rev_lst (slice' n (nx + 1) [] lst)

@@ -39,7 +39,7 @@ let () =
   let problem_15 = replicate ["a"; "b"; "B"; "c"; "d"; "e"; "f"] 3 in
   let problem_16 = drop ["a"; "b"; "c"; "d"; "e"; "f"; "g"; "h"; "i"; "j"] 3 in
   let problem_17 = split [1; 2; 3; 4; 5; 6] 3 in
-  let problem_18 = slice [1; 2; 3; 4; 5; 6] 3 5 in
+  let problem_18 = slice [1; 2; 3; 4; 5; 6; 7; 8; 9] 3 5 in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
   print_one string_of_int problem_1;
@@ -93,5 +93,5 @@ let () =
   print_endline "\nProblem 17: split [1; 2; 3; 4; 5; 6] 3";
   print_seventeen problem_17;
 
-  print_endline "Problem 18: slice [1; 2; 3; 4; 5; 6] 3 5";
+  print_endline "Problem 18: slice [1; 2; 3; 4; 5; 6; 7; 8; 9] 3 5";
   List.iter print_int problem_18;
