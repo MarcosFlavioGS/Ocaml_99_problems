@@ -12,7 +12,7 @@ let encode_direct (lst: 'a list): 'a rle list =
     else Many (count + 1, elem)
   in
   let rec encode_direct' count acc = function
-    | [] -> []
+    | [] -> acc
     | [elem] -> aux count elem :: acc
     | fst :: (scnd :: _ as tail) ->
       if fst = scnd then encode_direct' (count + 1) acc tail
