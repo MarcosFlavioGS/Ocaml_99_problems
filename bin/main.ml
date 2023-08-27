@@ -17,6 +17,7 @@ open P16;;
 open P17;;
 open P18;;
 open P19;;
+open P20;;
 
 let () =
   print_endline "Hello Ocamlers !\nThis is my Attempt on solving Ocaml's 99 problems.";
@@ -42,6 +43,7 @@ let () =
   let problem_17 = split [1; 2; 3; 4; 5; 6] 3 in
   let problem_18 = slice [1; 2; 3; 4; 5; 6; 7; 8; 9] 3 5 in
   let problem_19 = rotate [1; 2; 3; 4; 5; 6; 7; 8; 9] 3 in
+  let problem_20 = remove_at 3 [1; 2; 3; 4; 5; 6; 7; 8; 9] in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
   print_one string_of_int problem_1;
@@ -98,5 +100,8 @@ let () =
   print_endline "Problem 18: slice [1; 2; 3; 4; 5; 6; 7; 8; 9] 3 5";
   List.iter print_int problem_18;
 
-  print_endline "Problem 19: rotate [1; 2; 3; 4; 5; 6; 7; 8; 9] 3";
+  print_endline "\nProblem 19: rotate [1; 2; 3; 4; 5; 6; 7; 8; 9] 3";
   List.iter print_int problem_19;
+
+  print_endline "\nProblem 20: remove_at 3 [1; 2; 3; 4; 5; 6; 7; 8; 9]";
+  List.iter print_int problem_20;
