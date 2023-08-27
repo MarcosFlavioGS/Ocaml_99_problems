@@ -6,9 +6,5 @@ let range (srt: int) (nd: int) =
     if srt < nd then up (srt + 1) nd (srt :: acc)
     else srt :: acc
   in
-  let rec down srt nd acc =
-    if srt > nd then down (srt - 1) nd (srt :: acc)
-    else srt :: acc
-  in
   if srt < nd then rev_lst (up srt nd [])
-  else rev_lst (down srt nd [])
+  else up nd srt []
