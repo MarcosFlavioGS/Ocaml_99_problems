@@ -20,6 +20,7 @@ open P19;;
 open P20;;
 open P21;;
 open P22;;
+open P23;;
 
 let () =
   print_endline "Hello Ocamlers !\nThis is my Attempt on solving Ocaml's 99 problems.";
@@ -49,6 +50,7 @@ let () =
   let problem_21 = insert_at "Hello" 3 ["1"; "2"; "3"; "4"; "5"; "6"; "7"; "8"; "9"] in
   let problem_22_up = range 3 10 in
   let problem_22_down = range 10 3 in
+  let problem_23 = rand_select ["my"; "name"; "is"; "rand"] 3 in
 
   print_endline "Problem 01: last [1; 2; 3; 4;]";
   print_one string_of_int problem_1;
@@ -118,3 +120,6 @@ let () =
   List.iter print_int problem_22_up;
   print_endline "\nProblem 22: range 10 3";
   List.iter print_int problem_22_down;
+
+  print_endline "\nProblem 23: select_at ['my'; 'name'; 'is'; 'rand'] 3";
+  List.iter print_string problem_23;
