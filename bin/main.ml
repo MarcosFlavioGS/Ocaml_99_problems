@@ -121,5 +121,5 @@ let () =
   print_endline "\nProblem 22: range 10 3";
   List.iter print_int problem_22_down;
 
-  print_endline "\nProblem 23: select_at ['my'; 'name'; 'is'; 'rand'] 3";
+  print_endline "\nProblem 23: rand_select ['my'; 'name'; 'is'; 'rand'] 3";
   List.iter print_string problem_23;
