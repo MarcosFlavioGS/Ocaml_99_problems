@@ -5,7 +5,8 @@ let rand_select (lst: 'a list) (n: int): 'a list =
   let rec extract_rnd acc n = function
     | [] -> raise Not_found
     | h :: t ->
-      if n = 0 then (h, acc @ t) else extract_rnd (h :: acc) (n - 1) t
+      if n = 0 then (h, acc @ t)
+      else extract_rnd (h :: acc) (n - 1) t
   in
 
   let rec rand' n len acc = function
